@@ -5,7 +5,9 @@
 	z-index: 3;
 	background-color: rgba(0, 0, 0, 0.4);
 }
-
+.slides-navigation {
+	z-index: 6;
+}
 .slides-navigation .prev,
 .slides-navigation .next{
 	width: 47px;
@@ -22,4 +24,37 @@
 .slides-navigation a.next {
 	right: 20px;
 	background-image: url(../imgs/icons/next.png);
+}
+
+.titleMsg {
+	position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.titleMsg .heading p {
+	color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.titleMsg .heading .main {
+	font-size: 50px;
+}
+
+.titleMsg .heading .sub {
+	font-size: 23px;
+}
+
+.section {
+	padding: 100px 0;
+}
+
+.aboutImage {
+	max-width: 80% ;
 }
