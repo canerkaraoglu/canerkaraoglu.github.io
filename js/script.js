@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Machine Learning Engineer.", "M.Sc. Student.", "Software Developer."],
+		strings: ["Machine Learning Engineer.", "M.Sc. Informatcs Student.", "Software Developer."],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
@@ -37,6 +37,8 @@ $(document).ready(function() {
 
     
     var skillsTopOffset = $(".skillsSection").offset().top;
+    var statsTopOffset = $(".statsSection").offset().top;
+    var countUpFinished = false
 
     $(window).scroll(function () {
 
@@ -54,6 +56,19 @@ $(document).ready(function() {
     		});
 
     	}
+
+    	if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+    		$(".counter").each(function() {
+	    	var element = $(this);
+	    	var endVal = parseInt(element.text());
+
+	    	element.countup(endVal)
+    		})
+
+    		countUpFinished = true
+    	}
     });
+
+    
 
 });
