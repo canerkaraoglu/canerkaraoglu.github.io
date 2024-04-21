@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Machine Learning Engineer.", "M.Sc. Informatcs Student.", "Software Developer."],
+		strings: ["Machine Learning Engineer.", "M.Sc. Informatics Student.", "Software Developer."],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
@@ -69,6 +69,16 @@ $(document).ready(function() {
     	}
     });
 
+    Fancybox.bind('[data-fancybox="gallery"]')
+
+    $(".items").isotope({
+    	filter: '*',
+    	animationOptions: {
+    		duration: 1500,
+    		easing: 'linear',
+    		queue: false
+    	}
+    })
     
 
 });
