@@ -304,3 +304,63 @@ body {
 .items {
 	padding: 0;
 }
+
+.copyrightSection {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
+#navigation {
+	background-color: #1abc9c;
+	padding: 20px 10px;
+	z-index: 100;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+.navbar-brand {
+	color: #fff;
+}
+
+.navbar-brand, 
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../imgs/icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+
+.loader .inner {
+	width: 100%;
+	height: 100%;
+	background: url(../imgs/loader.gif) center center no-repeat;
+}
