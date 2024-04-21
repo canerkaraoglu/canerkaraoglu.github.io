@@ -2,4 +2,4 @@
 
 Visit the link:
 
-[a link](https://canerkaraoglu.github.io/)
+[Personal Website](https://canerkaraoglu.github.io/)
